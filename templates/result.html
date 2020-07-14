@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block contact %}
+
+    {% if msg = "You got it!" %}
+    <p>Do you want to play again?
+        <a href="/">Yes!!</a>
+        <a href="/goodbye">No, thanks</a>
+    </p>
+
+    {% else %}.
+        {{ message }}
+        <a href="/">Guess again -></a>
+
+{% endblock contact %}
